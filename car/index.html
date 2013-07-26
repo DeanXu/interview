@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery.jscrollpane.css">
     </head>
     <body>
         <div class="head_bg"></div>
@@ -21,10 +22,10 @@
                 </div>
                 <div class="header_nav">
                     <ul>
-                        <li><span>车型亮点</span><em class="green_point"></em></li>
-                        <li><span class="hide">实力美学</span><em class="white_point"></em></li>
-                        <li><span class="hide">明锐荣耀</span><em class="white_point"></em></li>
-                        <li><span class="hide">活动新闻</span><em class="white_point"></em></li>
+                        <li data-div="banner"><span>车型亮点</span><em class="green_point"></em></li>
+                        <li data-div="section1"><span class="hide">实力美学</span><em class="white_point"></em></li>
+                        <li data-div="section2"><span class="hide">明锐荣耀</span><em class="white_point"></em></li>
+                        <li data-div="section3"><span class="hide">活动新闻</span><em class="white_point"></em></li>
                     </ul>
                 </div>
             </div>
@@ -41,27 +42,92 @@
                     </div>
                     <div class="clear"></div>
                     <div class="p-tab_content">
-                        <h2>实力美学<span>Authentic Beauty</span></h2>
-                        <div class="section1_content">
-                            <div class="section1_unit large">
-                                <img src="img/section1_1.jpg"/>
-                                <span>直瀑式造型散热格栅</span>
+                        <div class="section1_ptab">
+                            <div class="section1_tab1">
+                                <h2>实力美学<span>Authentic Beauty</span></h2>
+                                <div class="section1_sbar">
+                                    <div class="section1_content">
+                                        <div class="section1_unit large">
+                                            <img src="img/section1_1.jpg"/>
+                                            <span>直瀑式造型散热格栅</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_2.jpg" width="205" height="137"/>
+                                            <span>立体尾唇线</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_4.jpg" width="205" height="137"/>
+                                            <span>加大宽幅后视镜</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_3.jpg" width="205" height="137"/>
+                                            <span>蝶翼式前大灯</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_5.jpg" width="205" height="137"/>
+                                            <span>双开启式防夹天窗</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_2.jpg" width="205" height="137"/>
+                                            <span>立体尾唇线</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_4.jpg" width="205" height="137"/>
+                                            <span>加大宽幅后视镜</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_3.jpg" width="205" height="137"/>
+                                            <span>蝶翼式前大灯</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_5.jpg" width="205" height="137"/>
+                                            <span>双开启式防夹天窗</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="section1_unit">
-                                <img src="img/section1_2.jpg" width="205" height="137"/>
-                                <span>立体尾唇线</span>
-                            </div>
-                            <div class="section1_unit">
-                                <img src="img/section1_4.jpg" width="205" height="137"/>
-                                <span>加大宽幅后视镜</span>
-                            </div>
-                            <div class="section1_unit">
-                                <img src="img/section1_3.jpg" width="205" height="137"/>
-                                <span>蝶翼式前大灯</span>
-                            </div>
-                            <div class="section1_unit">
-                                <img src="img/section1_5.jpg" width="205" height="137"/>
-                                <span>双开启式防夹天窗</span>
+                            <div class="section1_tab2">
+                                <h2>实力美学<span>Authentic Beauty</span></h2>
+                                <div class="section1_sbar">
+                                    <div class="section1_content">
+                                        <div class="section1_unit large">
+                                            <img src="img/section1_1.jpg"/>
+                                            <span>直瀑式造型散热格栅</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_2.jpg" width="205" height="137"/>
+                                            <span>立体尾唇线</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_4.jpg" width="205" height="137"/>
+                                            <span>加大宽幅后视镜</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_3.jpg" width="205" height="137"/>
+                                            <span>蝶翼式前大灯</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_5.jpg" width="205" height="137"/>
+                                            <span>双开启式防夹天窗</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_2.jpg" width="205" height="137"/>
+                                            <span>立体尾唇线</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_4.jpg" width="205" height="137"/>
+                                            <span>加大宽幅后视镜</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_3.jpg" width="205" height="137"/>
+                                            <span>蝶翼式前大灯</span>
+                                        </div>
+                                        <div class="section1_unit">
+                                            <img src="img/section1_5.jpg" width="205" height="137"/>
+                                            <span>双开启式防夹天窗</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -88,220 +154,244 @@
                     </div>
                     <div class="section2_right">
                         <div class="section2_group">
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit" data-year="2006" data-desc="11大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第11届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2006</h3>
+                                    <p>1111第届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2007" data-desc="22大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第22届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
                                     <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <p>2222第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
-                            <div class="section2_group_unit">
+                            <div class="section2_group_unit dark" data-year="2008" data-desc="33大型车内空气质量监测－健康汽车 十大我最爱的家用汽车" data-title="第33届青春汽车大型评选活动">
                                 <img src="img/section2.jpg"/>
                                 <div class="section2_group_unit_pannel">
                                     <img src="img/section2.jpg" />                                
-                                    <h3>2007</h3>
-                                    <p>第二届青春汽车大型评选活动<br />2007年度十大车型</p>
+                                    <h3>2008</h3>
+                                    <p>3333第二届青春汽车大型评选活动2007年度十大车型</p>
                                     <a href="javascript:;"></a>
+                                    <i class="close"></i>
                                 </div>
                             </div>
                             <div class="clear"></div>
@@ -310,8 +400,8 @@
                             <div class="prev"><</div>
                             <div class="section2_years_con">
                                 <ul>
-                                    <li><a href="javascript:;">2006</a></li>
-                                    <li class="actived"><a href="javascript:;">2007</a></li>
+                                    <li class="actived"><a href="javascript:;">2006</a></li>
+                                    <li><a href="javascript:;">2007</a></li>
                                     <li><a href="javascript:;">2008</a></li>
                                     <li><a href="javascript:;">2009</a></li>
                                     <li><a href="javascript:;">2010</a></li>
@@ -341,6 +431,7 @@
                                 <img src="img/section3_1.jpg" />
                             </div>
                             <div class="section3_lbr">
+                                <div class="section3_sbar">
                                 <ul>
                                     <li><a href="javascript:;"><em class="ul-arrow"></em><span>三款新车锐意上市 上海大众斯柯达闪耀亮相成都车展</span></a><span class="green-tip">new</span></li>
                                     <li><a href="javascript:;"><em class="ul-arrow"></em><span>明锐GreenLine新一代亮相长春车展 上海大众斯柯达绿动汽车城</span></a></li>
@@ -348,30 +439,36 @@
                                     <li><a href="javascript:;"><em class="ul-arrow"></em><span>明锐GreenLine新一代亮相长春车展</span></a></li>
                                     <li><a href="javascript:;"><em class="ul-arrow"></em><span>三款新车锐意上市 上海大众斯柯达闪耀</span></a></li>
                                     <li><a href="javascript:;"><em class="ul-arrow"></em><span>明锐GreenLine新一代亮相长春车展 上海大众斯柯达绿动</span></a></li>
+                                    <li><a href="javascript:;"><em class="ul-arrow"></em><span>三款新车锐意上市 上海大众斯柯达闪耀亮相成都车展</span></a><span class="green-tip">new</span></li>
+                                    <li><a href="javascript:;"><em class="ul-arrow"></em><span>明锐GreenLine新一代亮相长春车展 上海大众斯柯达绿动汽车城</span></a></li>
+                                    <li><a href="javascript:;"><em class="ul-arrow"></em><span>三款新车锐意上市 上海大众斯柯达闪耀亮相成都车展</span></a></li>
+                                    <li><a href="javascript:;"><em class="ul-arrow"></em><span>明锐GreenLine新一代亮相长春车展</span></a></li>
+                                    <li><a href="javascript:;"><em class="ul-arrow"></em><span>三款新车锐意上市 上海大众斯柯达闪耀</span></a></li>
+                                    <li><a href="javascript:;"><em class="ul-arrow"></em><span>明锐GreenLine新一代亮相长春车展 上海大众斯柯达绿动</span></a></li>
                                 </ul>
-                                <div class="scroll-bar">
-                                    <div class="scroll-bar_drag"></div>
                                 </div>
-                                <div class="hr-v"></div>
                             </div>
+                            <div class="hr-v"></div>
                         </div>
 
                     </div>
                     <div class="section3_right">
-                        <div class="p-tab_head div-skew2">
-                            <ul>
-                                <li><a class="actived" href="javascript:;"><span>视频分享</span></a></li>
-                                <li><a href="javascript:;"><span>频保下载</span></a></li>
-                            </ul>
-                            <div class="clear"></div>
-                        </div>
-                        <div class="section3_rb">
-                            <div class="section3_rbr">
-                                <a href="javascript:;" class="green_point">1</a><br />
-                                <a href="javascript:;" class="white_point">2</a><br />
-                                <a href="javascript:;" class="white_point">3</a>
+                        <div class="fl">
+                            <div class="p-tab_head div-skew2">
+                                <ul>
+                                    <li><a class="actived" href="javascript:;"><span>视频分享</span></a></li>
+                                    <li><a href="javascript:;"><span>频保下载</span></a></li>
+                                </ul>
+                                <div class="clear"></div>
                             </div>
-                            <div><img src="img/section3_2.jpg"/></div>
+                            <div class="section3_rb">
+                                <div class="section3_rbr">
+                                    <a href="javascript:;" class="green_point">1</a><br />
+                                    <a href="javascript:;" class="white_point">2</a><br />
+                                    <a href="javascript:;" class="white_point">3</a>
+                                </div>
+                                <div><img src="img/section3_2.jpg"/></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -430,5 +527,10 @@
                 <div class="footer_right"></div>
             </div>
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/jquery.mousewheel.js"></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
