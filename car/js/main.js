@@ -80,7 +80,7 @@ $(function(){
         });
     });
     $(".header_nav li").each(function(){
-        s_arr.push($("."+$(this).data("div")).offset().top);
+        s_arr.push($("."+$(this).data("div2")).offset().top-90);
     });
     $(window).scroll(function(){
         if(!lock){
